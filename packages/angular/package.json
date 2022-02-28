@@ -3,7 +3,7 @@
   "version": "5.3.1",
   "license": "MIT",
   "scripts": {
-    "build": "ng build --prod",
+    "build": "ng build --configuration production",
     "build:watch": "ng build @vime/angular --watch",
     "clean": "rimraf dist projects/vime/src/components projects/vime/src/VimeModule.ts",
     "clean:build": "rimraf dist",
@@ -11,22 +11,22 @@
     "ng": "ng"
   },
   "devDependencies": {
+    "@angular-devkit/build-angular": "^13.2.5",
+    "@angular/cli": "^13.2.5",
+    "@angular/common": "^13.2.4",
+    "@angular/compiler": "^13.2.4",
+    "@angular/compiler-cli": "^13.2.4",
+    "@angular/core": "^13.2.4",
+    "@angular/platform-browser": "^13.2.4",
+    "@angular/platform-browser-dynamic": "^13.2.4",
     "@vime/core": "workspace:*",
-    "@angular-devkit/build-angular": "v11-lts",
-    "@angular/cli": "v11-lts",
-    "@angular/common": "v11-lts",
-    "@angular/compiler": "v11-lts",
-    "@angular/compiler-cli": "v11-lts",
-    "@angular/core": "v11-lts",
-    "@angular/platform-browser": "v11-lts",
-    "@angular/platform-browser-dynamic": "v11-lts",
-    "ng-packagr": "^11.0.0",
+    "ng-packagr": "^13.2.1",
     "npm-run-all": "^4.1.5",
     "rimraf": "^3.0.2",
-    "rxjs": "~6.6.0",
-    "tslib": "^2.0.0",
-    "typescript": "~4.0.2",
-    "zone.js": "~0.10.2"
+    "rxjs": "~7.5.4",
+    "tslib": "^2.3.1",
+    "typescript": "~4.5.5",
+    "zone.js": "~0.11.4"
   },
   "peerDependencies": {
     "@vime/core": "5.3.1"

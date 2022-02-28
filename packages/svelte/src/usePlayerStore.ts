@@ -1,16 +1,16 @@
 import {
-  PlayerProp,
-  usePlayerContext,
-  PlayerProps,
-  Dispatcher,
   createDispatcher,
+  Dispatcher,
   findPlayer,
-  WritableProps,
-  isWritableProp,
   initialState,
+  isWritableProp,
+  PlayerProp,
+  PlayerProps,
+  usePlayerContext,
+  WritableProps,
 } from '@vime/core';
 import { onMount } from 'svelte';
-import { writable, get as unwrap, Writable, Readable } from 'svelte/store';
+import { get as unwrap, Readable,Writable, writable } from 'svelte/store';
 
 type PropStoreType<P extends keyof PlayerProps> = P extends keyof WritableProps
   ? Writable<PlayerProps[P]>

@@ -1,11 +1,11 @@
+import { ElementRef, Injectable } from '@angular/core';
 import {
-  PlayerProp,
+  createDispatcher,
   Dispatcher,
   findPlayer,
+  PlayerProp,
   usePlayerContext,
-  createDispatcher,
 } from '@vime/core';
-import { ElementRef, Injectable } from '@angular/core';
 
 @Injectable()
 export abstract class VimeComponent {

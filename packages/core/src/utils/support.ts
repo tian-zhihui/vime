@@ -1,5 +1,6 @@
-import { listen } from './dom';
 import { isFunction, isUndefined, noop } from './unit';
+
+import { listen } from './dom';
 
 export type WebKitPresentationMode =
   | 'picture-in-picture'
@@ -8,7 +9,7 @@ export type WebKitPresentationMode =
 
 declare global {
   interface Document {
-    readonly pictureInPictureEnabled?: boolean;
+    readonly pictureInPictureEnabled: boolean;
   }
 
   interface Window {
@@ -21,7 +22,7 @@ declare global {
   }
 
   interface HTMLVideoElement {
-    readonly disablePictureInPicture?: boolean;
+    disablePictureInPicture: boolean;
     readonly webkitDisplayingFullscreen?: boolean;
     readonly webkitSupportsFullscreen?: boolean;
     readonly webkitWirelessVideoPlaybackDisabled?: boolean;

@@ -1,13 +1,13 @@
-import { onMounted, readonly, Ref, ref, watch } from 'vue';
 import {
   createDispatcher,
   Dispatcher,
   findPlayer,
-  PlayerProps,
-  WritableProps,
-  usePlayerContext as useVimeContext,
   isWritableProp,
+  PlayerProps,
+  usePlayerContext as useVimeContext,
+  WritableProps,
 } from '@vime/core';
+import { onMounted, readonly, Ref, ref, watch } from 'vue';
 
 /**
  * Finds and returns the closest ancestor player element to the given `el`.

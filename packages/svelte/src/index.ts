@@ -1,17 +1,16 @@
-export {
-  PlayerProp,
-  PlayerProps,
-  PlayerMethods,
-  PlayerEvent,
-  PlayerEvents,
-  ViewType,
-  MediaType,
-  Translation,
-  Provider,
-  AdapterHost,
-  MediaProviderAdapter,
-  watchComponentRegistry,
-} from '@vime/core';
-
 export * from './components';
 export * from './usePlayerStore';
+export {
+  AdapterHost,
+  MediaProviderAdapter,
+  MediaType,
+  PlayerEvent,
+  PlayerEvents,
+  PlayerMethods,
+  PlayerProp,
+  PlayerProps,
+  Provider,
+  Translation,
+  ViewType,
+  watchComponentRegistry,
+} from '@vime/core';

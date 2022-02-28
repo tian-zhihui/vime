@@ -1,8 +1,8 @@
 import {
   createDispatcher,
+  findPlayer,
   PlayerProp,
   usePlayerContext,
-  findPlayer,
 } from '@vime/core';
 
 export const Mixin = (props: PlayerProp[]) => ({

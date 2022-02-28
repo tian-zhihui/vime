@@ -1,11 +1,11 @@
-import { useCallback, useLayoutEffect, useState } from 'react';
 import {
-  PlayerProps,
   createDispatcher,
-  usePlayerContext as useContext,
   findPlayer,
+  PlayerProps,
+  usePlayerContext as useContext,
   WritableProps,
 } from '@vime/core';
+import { useCallback, useLayoutEffect, useState } from 'react';
 
 const noop = () => {};
 

@@ -33,8 +33,8 @@
     "@vime/core": "workspace:*",
     "npm-run-all": "^4.1.5",
     "rimraf": "^3.0.2",
-    "typescript": "^4.0.2",
-    "vue": "^2.6.11"
+    "typescript": "^4.5.5",
+    "vue": "^3.2.31"
   },
   "peerDependencies": {
     "@vime/core": "5.3.1",
